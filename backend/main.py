@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel, HttpUrl
 from fastapi.middleware.cors import CORSMiddleware
+from services.genai import YoutubeProcessor, GeminiProcessor
 
 
 class VideoAnalysisRequest(BaseModel):
@@ -20,34 +21,21 @@ app.add_middleware(
 
 @app.post("/analyze_video")  # Change this line
 def analyze_video(request: VideoAnalysisRequest):
-    from langchain_community.document_loaders import YoutubeLoader
-    from langchain_text_splitters import RecursiveCharacterTextSplitter
-    #
-    loader = YoutubeLoader.from_youtube_url(
-        str(request.youtube_link), add_video_info=True)
-    docs = loader.load()
-    print(f"{type(docs)}")
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000, chunk_overlap=0)
-    results = text_splitter.split_documents(docs)
+   
+    genai_processor = GeminiProcessor(model_name='gemini-pro',project="radicalaisamplegemini")
+   
+    yt = YoutubeProcessor(genai_processor=genai_processor)
+    results = yt.retrieve_youtube_document(video_url=request.youtube_link, verbose=False)
+    
+    summary = genai_processor.generate_document_summary(results,verbose = True)
 
-    print(f"{type(results)}")
+    # find the key concepts
 
-    author = results[0].metadata['author']
-    length = results[0].metadata['length']
-    title = results[0].metadata['title']
+    key_concepts = yt.find_key_concepts(results,group_size = 2)
 
-    total_size = len(results)
-    return {
-
-        "author": author,
-        "length": length,
-        "title": title,
-        "total_size": total_size
-    }
+    return {"key_concepts": key_concepts}
 
 
 @app.get("/health")
 def health():
-    print("Health is called from the FASTAPI calls uhuuu")
     return {"status": "ok"}

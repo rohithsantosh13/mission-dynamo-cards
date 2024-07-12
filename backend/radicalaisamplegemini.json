@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "radicalaisamplegemini",
+  "private_key_id": "7ca9a6088b504fe905ea73e9b438cd392ce73985",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCN7OeWSEe6bzGC\nfZQAA2+l/kaKIzVQ/6H7Ws4s7gQ1aVYmNU105InEPvngnx1hilba/hDh/t2387dr\nKYBlsu9FbEOTUiUVu3RyxrWWZ/3glBzuacQ8xctUxoG+uRYdzlARFJq/nkVhhVOF\niRDYykrW/lndegbtnxWdTeUFim9R9f8bAAoyhauypJWLJF8DIqMK9Hu+BBMuZiTF\nDhpNE8co3KGCPBjFQVdn6AiWKergdNm8GnCk+aR6tsaMigDIpxMLlNVMEBckyl7d\nJeIEgBQ/Y07UtLEXPrN84YAafRR2GRtcxNHkqCDMzMudbkw1hd7p7SHDEucbOffe\nLt78QRL7AgMBAAECggEACZwYZDsZrDx6MDk7i7Kv3R/1+8V9hzH/8EqKOk2VeF5d\nCHJEf903nNOczMJJVYDt958LWpoMvjdg3H8vY/N1MxCtFK0TuMB8Fodw5TG+ZXXx\n7Yy4zlqgNWnJgDX9EuCU2Es6XS4kyYEjEiAhRWSRI7SONipcjLtgVcnf73ubpQN2\nxKsGfcxljG+ClK8odnjOS1WB4TKzSFHHpjbsTQL7zbhI9IYni2uxUMVv4IAC/siW\nS+kXvkBQUB3K6rvn/nithrRTleM++GNuj5BiiBIgYxOtTngXYpVdxujCIx46hwBN\n1gkI1cxIZ0tTRRONDuXG0PVQ4TTdQ8m7XGMQNHsVsQKBgQDCVNzFJjs9Zt8iuqJr\nfHkDQZ5M6IlagTKJRDrqVmA9Vlf8T65/bItvVl/g68x72+0sRx4+9zl4DW/2OtWs\n86BxFZQfd2Hr1FeUJjaTtRQmGmin1xc2+wQah2D4BORO+3r6QyS5dCBqWb8c9ZWb\nPWgIICRreggpk3DcUFQx2SLvCwKBgQC69qrGUBypnHKTXo5J2hEpoQXO6YWnoMQJ\nWHduKExmKHiqHLYJLK3nHmHXE3Q4tthwa8LXWE7skWJyBejmHM+2N4waDhd9oV1O\nIgont9TmX5aumOxC5AYxrYCztIp0sxPE1YAzRnA4n27MxoxF3tQ2zMa7KKnou0Yz\nOqP7EvKh0QKBgQCc9HWrNgm6ug+WuS7dqZcDrkfwzg/B7X+nplf/VOw+HjLKMoE5\noa2sqxKdU1XA5AxXKsmfCYZ9FD1Nno9eNRdsvoT4NS/9jW9+1K5X9nTjoYjNpse1\nPGBAHP+Q0kKkGDFnWDudHdHgk8Pr296Nl7ciePNxawqUqeUJzEd0S3APqQKBgQCt\ngQo8nc3rrU866e4cJS32NwOf4GDzjiM/FQVIikdUKszH+XsJipgcOrrLkLczhqPX\nuHmJxN8BdW4pqMhY/HXagTQYXel44g4n2zkXYOdHn3/DqhDfhqMk6QHeQ3aWFDYN\nXaDqdLziHzsA+GTm1oKUFHd86qC7ZUghdJMHBq96cQKBgGQ0nyORn/V0tQsC2RvY\nMkd4FS4Xhv5fbefMhgxJ6uEBMPJmFwRTMYDZo8nOudTxB2j8YC+HKCMWOjTYdd3A\nCdoB7cUTpy7dK+aWvUDH6vCC9KHLknP3M1OgO2Nn/R5YDh1eVzVJibv9vbTF+VXu\nOnMDm20eRNJZP9pZwPL6x9U2\n-----END PRIVATE KEY-----\n",
+  "client_email": "mission-dynamo-cards@radicalaisamplegemini.iam.gserviceaccount.com",
+  "client_id": "102697071782636986121",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mission-dynamo-cards%40radicalaisamplegemini.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
