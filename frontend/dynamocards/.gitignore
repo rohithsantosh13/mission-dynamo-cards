@@ -25,4 +25,4 @@ dist-ssr
 
 # ignore backend venv
 backend/env/
-backend.radicalaisamplegemini.json
+backend/radicalaisamplegemini.json
